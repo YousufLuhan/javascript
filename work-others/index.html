@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="demo"></h1>
+  
+
+
+<script>
+  let payment = false;
+  let mark = 90;
+  function enroll (callback) {
+    console.log("Enroll here");
+    setTimeout(function(){
+      if(payment){
+        callback();
+      }else{
+        console.log("Payment Faild!");
+      }
+    },2000)
+  }
+
+  function progress(callback) {
+    console.log("you have in progress");
+    setTimeout(function(){
+      if(mark >= 80){
+        callback();
+      }else{
+        console.log("you does not enough mark!");
+      }
+    },5000)
+  }
+
+  function getCertificate(){
+    setTimeout(function(){
+      console.log("Welcome! you get you certificate");
+    },1500)
+    
+  }
+
+// enroll(function(){
+//   progress(getCertificate);
+// })
+ 
+const numbers = [19,4,30,10,5,20,7];
+
+
+for (let x =0; x<numbers.length; x++){
+
+ 
+}
+
+for()
+
+   
+
+</script>
+</body>
+</html>

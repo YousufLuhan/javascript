@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script>
+    // const numbers = [10,100,1000,10000,100000];
+    // for(let x = 0; x < numbers.length ; x++){
+    //   let randomNumber =Math.floor(Math.random() * numbers[x]);
+    //   console.log(randomNumber); 
+    // }
+  //  console.time();
+  //   let date = new Date();
+  //   let m1 =date.getMinutes();
+  //   let s1 = date.getSeconds();
+    
+    // setInterval(()=>{
+    //   let date = new Date();
+    //   let m2 = date.getMinutes();
+    //   let s2 = date.getSeconds();
+     
+     
+    //   if(s1 > s2){
+    //     s2 = 60 + s2;
+    //     m2 = m2 - 1;
+    //   }
+    //   let show = m2 - m1;
+    //   console.log(s1,s2);
+    // document.getElementById("demo").innerHTML = `${show} minutes ago`;
+    
+
+    // },1000)
+    let para = document.getElementById("demo");
+    let randomNumber = Math.floor(Math.random() * 10);
+    para.innerHTML = `One digit random number = ${randomNumber}`;
+
+    let randomNumber1 = Math.floor(Math.random() * 6) + 1;
+    let randomNumber2 = (Math.pow(10,randomNumber1));
+    para.innerHTML = `Two type random Number is = ${randomNumber2}`;
+    
+
+
+
+
+
+    
+    
+      
+     
+      
+  </script>
+</body>
+</html>
