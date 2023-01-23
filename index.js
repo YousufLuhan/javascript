@@ -7,3 +7,13 @@ function isPrime(number) {
   }
   return true;
 }
+
+function totallPrime(number) {
+  let array = [];
+  for (let i = 0; i <= number; i++) {
+    if (isPrime(i)) {
+      array.push(i);
+    }
+  }
+  return array;
+}
